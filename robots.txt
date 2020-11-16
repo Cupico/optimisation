@@ -1,0 +1,5 @@
+User-agent: *
+
+#Sitemap
+
+sitemap: https://optimisation-website.vercel.app/index.hmtl

@@ -1,0 +1,28 @@
+{
+    "headers": [
+      {
+        "headers": [
+          {
+            "key": "Expires",
+            "value": "access plus 10 years"
+          }
+        ]
+      },
+      {
+        "headers": [
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'"
+          }
+        ]
+      },
+      {
+        "headers": [
+          {
+            "key": "Vary",
+            "value": "Accept-Encoding'"
+          }
+        ]
+      }
+    ]
+  }

@@ -1,28 +1,25 @@
 {
-    "headers": [
-      {
-        "headers": [
+  "headers": [
           {
-            "key": "Expires",
-            "value": "access plus 10 years"
+              "source": "/(.*)",
+              "headers": [
+                  {
+                      "key": "Content-Security-Policy",
+                      "value": "default-src * data: 'unsafe-inline' 'unsafe-eval'; worker-src * data: blob:; script-src * data: blob: 'unsafe-eval' 'unsafe-inline';"
+                  },
+                  {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                  },
+                  {
+                      "key": "Accept-Encoding",
+                      "value": "br;q=1.0, gzip;q=0.8, *;q=0.1"
+                  },
+                  {
+                      "key": "Cache-Control",
+                      "value": "max-age=31536000"
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "headers": [
-          {
-            "key": "Content-Security-Policy",
-            "value": "default-src 'self'"
-          }
-        ]
-      },
-      {
-        "headers": [
-          {
-            "key": "Vary",
-            "value": "Accept-Encoding'"
-          }
-        ]
-      }
-    ]
+      ]
   }
